@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div align="center">
+    <h1>Foods List</h1>
+    <a href="/add">Add new Food</a>
+    <br/><br/>
+    <table border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>PRICE</th>
+                <th>CHOOSE</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="food : ${listAll}">
+                <td th:text="${food.id}">id</td>
+                <td th:text="${food.name}">name</td>
+                <td th:text="${food.price}">price</td>
+                <td>
+                   <a th:href="@{'/edit/'+ ${food.id}}">Edit</a>
+                   <a th:href="@{'/delete/'+ ${food.id}}">Delete</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>   
+</body>
+</html>
