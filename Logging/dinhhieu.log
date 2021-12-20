@@ -1,0 +1,21 @@
+2021-12-20 17:09:47.481  INFO 6204 --- [main] dinhhieu.LoggingApplication              : Starting LoggingApplication using Java 16.0.2 on Admin with PID 6204 (D:\1.IT\1TechInTechlab\Logging\target\classes started by Admin in D:\1.IT\1TechInTechlab\Logging)
+2021-12-20 17:09:47.486 DEBUG 6204 --- [main] dinhhieu.LoggingApplication              : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-20 17:09:47.486  INFO 6204 --- [main] dinhhieu.LoggingApplication              : No active profile set, falling back to default profiles: default
+2021-12-20 17:09:48.146  INFO 6204 --- [main] dinhhieu.LoggingApplication              : Started LoggingApplication in 1.326 seconds (JVM running for 2.089)
+2021-12-20 17:09:48.153  INFO 6204 --- [main] dinhhieu.LoggingApplication              : Đây là log của hàm main
+2021-12-20 17:09:48.154  INFO 6204 --- [main] dinhhieu.LoggingApplication              : debug enabled: true
+2021-12-20 17:09:48.156 DEBUG 6204 --- [main] dinhhieu.LoggingApplication              : debug
+2021-12-20 17:09:48.156  INFO 6204 --- [main] dinhhieu.LoggingApplication              : info
+2021-12-20 17:09:48.156  WARN 6204 --- [main] dinhhieu.LoggingApplication              : warn
+2021-12-20 17:09:48.156 ERROR 6204 --- [main] dinhhieu.LoggingApplication              : error
+2021-12-20 17:09:48.157  INFO 6204 --- [main] dinhhieu.service.LogService              : Đây là log của hàm Service
+2021-12-20 17:09:48.158  INFO 6204 --- [main] dinhhieu.service.LogService              : debug enabled: false
+2021-12-20 17:09:48.158  INFO 6204 --- [main] dinhhieu.service.LogService              : info
+2021-12-20 17:09:48.158  WARN 6204 --- [main] dinhhieu.service.LogService              : warn
+2021-12-20 17:09:48.158 ERROR 6204 --- [main] dinhhieu.service.LogService              : error
+2021-12-20 17:09:48.164 ERROR 6204 --- [main] dinhhieu.service.DevideService           : Không thể chia 2 số 4/0
+
+java.lang.ArithmeticException: / by zero
+	at dinhhieu.service.DevideService.devide(DevideService.java:17) ~[classes/:na]
+	at dinhhieu.LoggingApplication.main(LoggingApplication.java:31) ~[classes/:na]
+
